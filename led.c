@@ -10,8 +10,12 @@ void main()
 		printf("%d\r\n",i);
 	}
 	led = 0;
+
+  qwe
+
 	if(key == 0)
 	{
 		led = ~led;
 	}
 }
+
