@@ -1,6 +1,7 @@
 #include <reg51.h>
 
 sbit led=P1^0;
+sbit key = P1^2;
 
 void main()
 {
@@ -9,4 +10,8 @@ void main()
 		printf("%d\r\n",i);
 	}
 	led = 0;
+	if(key == 0)
+	{
+		led = ~led;
+	}
 }
